@@ -1,1 +1,1 @@
-var my_name = 'peperoni';
+var project_app = 'portfolio';
