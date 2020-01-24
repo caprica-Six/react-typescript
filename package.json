@@ -1,0 +1,19 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "React and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caprica-Six/react-typescript.git"
+  },
+  "author": "Pepa Dom.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caprica-Six/react-typescript/issues"
+  },
+  "homepage": "https://github.com/caprica-Six/react-typescript#readme"
+}
