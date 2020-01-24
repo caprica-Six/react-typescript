@@ -4,6 +4,7 @@
   "description": "React and Typescript",
   "main": "index.js",
   "scripts": {
+    "build": "tsc index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/caprica-Six/react-typescript/issues"
   },
-  "homepage": "https://github.com/caprica-Six/react-typescript#readme"
+  "homepage": "https://github.com/caprica-Six/react-typescript#readme",
+  "dependencies": {
+    "@types/node": "^13.5.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "typescript": "^3.7.5"
+  }
 }
