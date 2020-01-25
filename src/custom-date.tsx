@@ -4,17 +4,30 @@ function CustomDate() {
   // returns run-time error, must specify that date is a string
   //let date = new Date();
 
-  let date: string = '';
+  const [date, setDate] = React.useState('');
+  const [time, setTime] = React.useState('');
 
   let getDate = () => {
-    date = new Date().toDateString();
+    setDate(new Date().toDateString());
     console.log('get date', getDate);
+  };
+
+  let getTime = () => {
+    setTime(new Date().toTimeString());
+    console.log('set time', setTime);
   };
 
   return (
     <div>
-      {date}
-      <button onClick={getDate}>Get the date</button>
+      <div>
+        <p>{date}</p>
+        <button onClick={getDate}>Get the date</button>
+      </div>
+
+      <div>
+        <p>{time}</p>
+        <button onClick={getTime}>Get the time</button>
+      </div>
     </div>
   );
 }
