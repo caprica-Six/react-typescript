@@ -1,20 +1,20 @@
 import * as React from 'react';
 
-function Fruits() {
-  let fruit: Array<string> = ['red', 'green', 'blue', 'orange'];
+type FruitsProps = {
+  fruit: Array<string>;
+};
 
+function Fruits(props: FruitsProps) {
   return (
-    <>
-      <ul>
-        {fruit.map((value, index) => {
-          return (
-            <li key={index} style={{color: value}}>
-              {value}
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <ul>
+      {props.fruit.map((value, index) => {
+        return (
+          <li key={index} style={{color: value}}>
+            {value}
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
