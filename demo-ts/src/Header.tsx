@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 interface HeaderProps {
-    buttonText: string;
+    buttonText?: string;
 }
 
 interface Movie {
@@ -24,7 +24,7 @@ export default function Header({ buttonText }: HeaderProps) {
     return (
         <div>
             <h1>Header</h1>
-            <button onClick={increment}>{buttonText}</button>
+            <button onClick={increment}>{buttonText || "Click to count"}</button>
 
             <p>{count}</p>
         </div>
