@@ -9,7 +9,13 @@ function App() {
       <Header />
 
       <header className="App-header">
-        <TextField text={'hello'} person={{ firstName: '', lastName: '' }} />
+        <TextField
+          text={'hello'}
+          person={{ firstName: '', lastName: '' }}
+          handleChange={(e) => {
+            e.preventDefault();
+          }}
+        />
       </header>
     </div>
   );

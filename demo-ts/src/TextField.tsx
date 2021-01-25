@@ -11,13 +11,14 @@ interface Props {
   i?: number;
   fn?: (jack: string) => string;
   person: Person;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 interface TextNode {
   text: string;
 }
 
-export const TextField = ({ text }: Props) => {
+export const TextField = ({ text, handleChange }: Props) => {
   const [count, setCount] = useState<TextNode>({ text: 'hi again' });
 
   const inputRef = useRef<HTMLInputElement>(null);
