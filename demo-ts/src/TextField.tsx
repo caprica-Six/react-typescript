@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface Person {
   firstName: string;
@@ -14,6 +14,10 @@ interface Props {
 }
 
 export const TextField = ({ text }: Props) => {
+  const [count, setCount] = useState<number | null | string>(5);
+
+  setCount('hi');
+
   return (
     <div>
       <p>{text}</p>
