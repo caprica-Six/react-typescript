@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
+import { TextField } from './TextField';
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
       <Header />
 
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <TextField text={'hello'} person={{ firstName: '', lastName: '' }} />
       </header>
     </div>
   );
