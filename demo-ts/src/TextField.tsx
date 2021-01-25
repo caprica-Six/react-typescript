@@ -13,10 +13,14 @@ interface Props {
   person: Person;
 }
 
-export const TextField = ({ text }: Props) => {
-  const [count, setCount] = useState<number | null | string>(5);
+interface TextNode {
+  text: string;
+}
 
-  setCount('hi');
+export const TextField = ({ text }: Props) => {
+  const [count, setCount] = useState<TextNode>({ text: 'hi again' });
+
+  setCount({ text });
 
   return (
     <div>
